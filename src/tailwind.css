@@ -1,0 +1,6 @@
+@tailwind base;
+@tailwind components;
+#billing-option:checked ~ div {
+  transform: translateX(100%);
+}
+@tailwind utilities;

@@ -1,52 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="styles.css">
   <title>Frontend Mentor | [Challenge Name Here]</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
-<body>
 
-  Our Pricing
-  Annually
-  Monthly
+<body class="flex flex-col justify-between min-h-screen font-montserrat bg-brand-lightest text-brand">
 
-  Basic
-  &dollar;19.99
-  &dollar;199.99
-  500 GB Storage
-  2 Users Allowed
-  Send up to 3 GB
-  Learn More
+  <div>
 
-  Professional
-  &dollar;24.99
-  &dollar;249.99
-  1 TB Storage
-  5 Users Allowed
-  Send up to 10 GB
-  Learn More
+    <div>
+      <h2 class="text-center">Our Pricing</h2>
+      <div class="flex justify-center items-center">
+        <span>Annually</span>
+        <label for="billing-option" class="block mx-8 cursor-pointer">
+          <div class="relative rounded-full w-12 h-7 bg-gradient-to-r from-brand-gradient-from to-brand-gradient-to">
+            <input type="checkbox" name="billing-checkbox" id="billing-option" class="sr-only">
+            <div class="absolute rounded-full bg-white top-1 left-1 w-5 h-5"></div>
+          </div>
+        </label>
+        Monthly
+      </div>
+    </div>
 
-  Master
-  &dollar;39.99
-  &dollar;399.99
-  2 TB Storage
-  10 Users Allowed
-  Send up to 20 GB
-  Learn More
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    <div>
+      <div>
+        <p>Basic</p>
+        <p id="basic">&dollar;19.99</p>
+        <p>&dollar;199.99</p>
+        <p>500 GB Storage</p>
+        <p>2 Users Allowed</p>
+        <p>Send up to 3 GB</p>
+        <button>Learn More</button>
+      </div>
+      <div>
+        Professional
+        &dollar;24.99
+        &dollar;249.99
+        1 TB Storage
+        5 Users Allowed
+        Send up to 10 GB
+        Learn More
+      </div>
+      <div>
+        Master
+        &dollar;39.99
+        &dollar;399.99
+        2 TB Storage
+        10 Users Allowed
+        Send up to 20 GB
+        Learn More
+      </div>
+    </div>
+  </div>
+
+  <div class=" attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div>
 </body>
+
 </html>
