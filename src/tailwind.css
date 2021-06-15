@@ -1,6 +1,6 @@
 @tailwind base;
 @tailwind components;
-#billing-option:checked ~ div {
+#billing-option:checked ~ span {
   transform: translateX(100%);
 }
 @tailwind utilities;

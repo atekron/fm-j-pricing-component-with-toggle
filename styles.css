@@ -516,7 +516,7 @@ video {
   height: auto;
 }
 
-#billing-option:checked ~ div {
+#billing-option:checked ~ span {
   transform: translateX(100%);
 }
 
